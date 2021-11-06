@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+
+    <!-- include css-cdn.ejs which contains bootstrap 5 CDN -->
+    <%- include('./partials/css-cdn.ejs') %>
+    <link rel="stylesheet" href="/css/signup.css">
+
+
+</head>
+<body>
+    <header>
+        <!-- include header.ejs which contains title and nav bar -->
+        <%- include('./partials/header2')  %>
+    </header>
+    <section>
+        <div class="container bg-light">
+            <div class="text-center">
+                <h2>Sign up</h2>                
+            </div>
+
+            <div class="row justify-content-center my-5">
+               
+                    <div class="col-lg-5">
+                        <form>
+
+                            <div class="my-3">
+                                <label for="email" class="form-label">Email address</label>
+                                <input type="email" name="email" id="email" class="form-control" required> 
+                                <div class="email error"></div>                           
+                            </div>
+
+                            <div class="my-3">
+                                <label for="password" class="form-label">Password</label>
+                                <input type="password" name="password" id="password" class="form-control">
+                                <div class="password error"></div>
+                            </div>
+
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                            
+                        </form>
+                    </div>   
+               
+
+            </div> <!-- end row -->
+        </div><!--end sign up container  -->
+    </section> <!-- end sign up section -->
+
+    <footer>
+        <%- include('./partials/footer'); %>
+      </footer>
+
+      <script src="/js/signup.js"></script>
+</body>
+</html>

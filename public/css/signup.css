@@ -1,0 +1,9 @@
+section {
+  padding: 60px 0;
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+  font-style: italic;
+}

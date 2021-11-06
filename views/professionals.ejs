@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+
+    <!-- include css-cdn.ejs which contains bootstrap 5 CDN -->
+    <%- include('./partials/css-cdn.ejs') %>
+    <link rel="stylesheet" href="/css/signup.css">
+
+</head>
+<body>
+    <header>
+        <!-- include header.ejs which contains title and nav bar -->
+        <%- include('./partials/header2')  %>
+    </header>
+     <!-- pricing plans -->
+     <section id="pricing" class="bg-light mt-5">
+        <div class="container-lg">
+            <div class="text-center">
+                <h2>Our Professional Services</h2>
+                <p class="lead text-muted">Choose your area of interest</p>
+            </div>
+
+            <!-- cards -->
+            <div class="row my-5 align-items-center justify-content-center">
+
+                <!-- Card #1 ... PHP Developer -->
+                <div class="col-8 col-lg-4 col-xl-3">
+                    <div class="card border-0">
+                        <div class="card-body text-center py-4">
+                            <h4 class="card-title">PHP Frameworks</h4>
+                            <p class="lead card-subtitle">Laravel, CodeIgniter</p>
+                            <p class="display-6 my-4 fw-bold text-primary">$10.99 <span  class="fs-6">per hour</span></p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Mushahid is our lead PHP developer with more than 5 years of experience on various PHP frameworks</p>
+                            <a href="#" class="btn btn-outline-primary bt-lg mt-3">Engage Now</a>
+                        </div>
+                    </div>                     
+
+                </div>
+
+                 <!-- Card 2 ... Node.js + React  JavasScript Frameworks-->
+                <div class="col-9 col-lg-4">
+                    <div class="card border-primary border-2">
+                        <div class="card-header text-center text-primary">Most popular </div>
+                        <div class="card-body text-center">
+                            <h4 class="card-title">JavasScript Frameworks</h4>
+                            <p class="card-subtitle lead">Node, Next, React, Angular, Vue</p>
+                            <p class="display-4 my-4 fw-bold text-primary">$19.99 <span  class="fs-6">per hour</span></p>
+                            <p class="card-text mx-5 text-muted d-none d-lg-block">Adil is the JS team lead with nearly 15 years of software development experience. In the last few years, he is more focused on various JS frameworks</p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Engage Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 ... Project Management -->
+                <div class="col-8 col-lg-3 col xl-4">
+                    <div class="card border-0">
+                        <div class="card-body text-center">
+                            <h4 class="card-title">Project Management</h4>
+                            <p class="card-subtitle lead">Project Management, Agile, Scrum</p>
+                            <p class="display-6 my-4 fw-bold text-primary">$29.99 <span  class="fs-6">per hour</span> </p>
+                            <p class="card-text">Abdullah has more that 20 years in experience in the software industry. </p>
+                            <a href="#" class="btn btn-outline-primary btn-lg mt-3">Engage Now</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- end row -->
+        
+        </div> <!-- end container -->
+    </section> <!-- end pricing section -->
+
+    <footer>
+        <%- include('./partials/footer'); %>
+      </footer>
+
+      <script src="/js/login.js"></script>
+</body>
+</html>

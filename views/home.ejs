@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+
+    <!-- include css-cdn.ejs which contains bootstrap 5 CDN -->
+    <%- include('./partials/css-cdn.ejs') %>
+
+    <style>
+        section {
+            padding: 60px 0;
+        }
+    </style>
+</head>
+<body>
+  <header>
+        <!-- include header.ejs which contains title and nav bar -->
+        <%- include('./partials/header2')  %>
+  </header>
+
+    <!-- main image and intro text -->
+  <section id="intro">
+    <div class="container-lg">
+        <div class="row justify-content-center align-items-center  gx-5">
+          <div class="col-md-5 text-center text-md-left">
+              <h1>
+                  <div class="display-2">One One Tech</div>
+                  <div class="display-5 text-muted">Your Coding Partner</div>
+              </h1>
+              <p class="lead my-4 text-muted">You can hire our professionals to meet you urgent development needs</p>
+              <a href="/professionals" class="btn btn-lg btn-secondary ">Get Services Now</a>
+          </div>
+
+          <div class="col-md-5 text-center d-none d-md-block">
+              <img src="/images/team-cover2.jpeg" class="img-fluid" alt="book cover" data-bs-toggle="tooltip" data-bs-placement="top" title="An Excellent Book for developers">
+          </div>
+      </div>
+  </div>
+
+</section>
+
+<!-- customer reviews shown as list group -->
+       
+<section id="reviews" class="bg-light">
+    <div class="container-lg">
+        <div class="text-center">
+           
+            <h2><i class="bi bi-stars"></i> Reviews</h2>
+            <p class="lead">What our other clients said about our team members ...</p>
+        </div>
+    
+    <div class=" row justify-content-center my-5">
+        <div class="col-lg-8">
+            <div class="list-group">
+
+                <!-- item 1 -->
+                <div class="list-group-item">
+                    <h5 class="mb-1">
+                        Excellent Experience
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        
+                    </h5>
+                    <p class="mb-1">Mushahid is a wonderful resource. He has a strong grip on PHP frameworks. He is very friendly and provides quick response to our queries.</p>
+                    <small>Review by David</small>
+                </div>
+
+                 <!-- item 2 -->
+                 <div class="list-group-item">
+                    <h5 class="mb-1">
+                        Intelligent Team
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>                            
+                    </h5>
+                    <p class="mb-1">Adil is an excellent resource and has all the abilities to handle complex tasks. He always listened to our needs and devised robust solutions</p>
+                    <small>Review by Adam</small>
+                </div>
+
+                <!-- item 3 -->
+                <div class="list-group-item">
+                    <h5 class="mb-1">
+                        Thorough professionals
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-fill"></i>
+                        <i class="bi bi-star-half"></i>                            
+                    </h5>
+                    <p class="mb-1">I have worked with Abdullah on various software development projects. I found him energetic and focused</p>
+                    <small>Review by Jane</small>
+                </div>              
+
+            </div> <!-- end list group-->
+        </div>
+    </div>
+    </div> <!-- end container for reviews -->
+</section> <!-- end section for reviews -->
+
+<!-- contact form -->
+<section id="contact">
+    <div class="container-lg">
+        <div class="text-center">
+            <h2>Get in Touch</h2>
+            <p class="lead">Question to ask? Please fill out the form below to contact us</p>
+        </div>
+
+        <!-- Contact us form -->
+        <div class="row justify-content-center my-5">
+            <div class="col-lg-6">
+                <form>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bi bi-envelope-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter your email address" >
+                        <span class="input-group-text">
+
+                            <i class="bi bi-question-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Enter the email address on which you want us to respond"></i>
+                        </span>
+                      </div>
+                    
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bi bi-file-person-fill"></i>
+                        </span>
+                        <input type="text" class="form-control" placeholder="Enter your Name" >
+
+                    </div>
+
+
+                    <label for="subject" class="form-label">What's your question about?</label>
+
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">
+                            <i class="bi bi-chat-right-dots-fill"></i>
+                        </span>
+                        <select name="" id="subject" class="form-select">                            
+                            <option value="pricing">Pricing query</option>
+                            <option value="content">Team member query</option>
+                            <option value="other">Other query</option>
+                        </select>
+                    </div>
+                  
+                    
+
+                    <div class="form-floating mb-3">
+                        <textarea id="query" class="form-control" style="height: 140px"></textarea>
+                        <label for="query">Your query...</label>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-secondary">Submit</button>
+                    </div>
+
+                </form>
+            </div> <!-- end column -->
+
+        </div> <!-- end row of contact us form -->
+
+    </div>  <!-- end container for contact us -->
+
+</section> <!-- end section for contact us -->
+
+<footer>
+        <%- include('./partials/footer'); %>
+</footer>
+
+
+</body>
+</html>

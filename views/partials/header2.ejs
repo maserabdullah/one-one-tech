@@ -8,11 +8,12 @@
           </span>              
         </a>
         
-        <!-- toggle button for nobile nav -->
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+     <!-- toggle button for nobile nav -->
 
+     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+   
       <!-- navbar links -->
       <div class="collapse navbar-collapse justify-content-end align-center" id="main-nav">
         <ul class="navbar-nav">
@@ -21,32 +22,37 @@
             <a class="nav-link" href="/professionals">Our Professionals</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#reviews">Reviews</a>
+            <a class="nav-link" href="/#reviews">Reviews</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contact">Get in Touch</a>
+            <a class="nav-link" href="/#contact">Get in Touch</a>
           </li>
 
           <% if(user) { %>
             <li class="nav-item">
-              <a class="nav-link bg-light" href="#">
+              <a class="nav-link bg-light" href="/">
                 Welcome, <%= user.email %>
               </a>
             </li>
 
-            <li class="nav-item ms-2 d-none d-md-inline">
-              <a class="btn btn-outline-warning" href="/logout">Log out</a>
+            <!-- for buttons in nav -->
+          
+            <li class="nav-item ms-2">
+              <a class="nav-link btn btn-outline-secondary" href="/logout">Log out</a>
             </li>
           %>          
           
           <% } else { %>
-              <li class="nav-item ms-2 d-none d-md-inline">
-                <a class="btn btn-outline-secondary" href="/login">Log in</a>
+              <li class="nav-item ms-2">
+                <a class="nav-link btn btn-outline-secondary" href="/login">Log in</a>
               </li>
               
-              <li class="nav-item ms-2 d-none d-md-inline">
-                <a class="btn btn-secondary" href="/signup">Sign up</a>
+              <li class="nav-item ms-2">
+                <a class="nav-link btn btn-light" href="/signup">Sign up</a>
               </li>
+
+            
+            
             </ul>
           <% } %>
       
